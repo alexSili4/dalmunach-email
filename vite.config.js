@@ -9,7 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: glob.sync('./src/*.html'),
       output: {
-        // Настройка для вывода файлов в разные папки
         assetFileNames: (assetInfo) => {
           if (assetInfo.name.endsWith('.css')) {
             return 'css/[name]-[hash][extname]';
@@ -23,19 +22,18 @@ export default defineConfig({
           if (assetInfo.name.endsWith('.ttf')) {
             return 'fonts/[name]-[hash][extname]';
           }
-          if (assetInfo.name.endsWith('.png')) {
+          if (assetInfo.name.endsWith('.png') || assetInfo.name.endsWith('.jpg')) {
             return 'images/[name]-[hash][extname]';
           }
-          // Настройка для других файлов, если необходимо
-          return 'assets/[name]-[hash][extname]';
+
+          return '[name]-[hash][extname]';
         },
-        // Настройка для вывода файлов JavaScript
         chunkFileNames: 'js/[name]-[hash].js',
         entryFileNames: 'js/[name]-[hash].js',
       },
     },
-    outDir: '../dist',
+    outDir: '../email',
   },
   plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
-  base: './',
+  base: 'https://dalmunach.sunagency.space/',
 });
