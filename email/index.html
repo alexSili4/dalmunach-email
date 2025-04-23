@@ -5,44 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dalmunach</title>
     <style>
-      @font-face {
-        font-family: 'Sofia Sans';
-        src: local('Sofia Sans'), url('https://dalmunach.sunagency.space/email/fonts/SofiaSans-Regular-dcPADOq0.ttf') format('truetype');
-        font-weight: 400;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
 
-      @font-face {
-        font-family: 'Playfair Display';
-        src: local('Playfair Display'), url('https://dalmunach.sunagency.space/email/fonts/PlayfairDisplay-Bold-D-aclrAg.ttf') format('truetype');
-        font-weight: 700;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia+Sans:wght@700&display=swap');
 
-      @font-face {
-        font-family: 'Inter';
-        src: local('Inter'), url('https://dalmunach.sunagency.space/email/fonts/Inter-Regular-DYjygwQm.ttf') format('truetype');
-        font-weight: 400;
-      }
-
-      body > div {
-        width: 344px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      footer a:is(:hover, :focus) {
-        background-color: #ffffff !important;
-      }
-
-      footer a > svg {
-        display: flex;
-        fill: #ffffff;
-        stroke: #ffffff;
-        transition: stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      footer a:is(:hover, :focus) > svg {
-        stroke: #222222;
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia+Sans&display=swap');
 
       footer {
         padding-top: 92px;
@@ -54,10 +21,6 @@
       }
 
       @media screen and (min-width: 768px) {
-        body > div {
-          width: 600px;
-        }
-
         footer {
           background-image: url('https://dalmunach.sunagency.space/email/images/footer-bg-desk-CdFfbEAz.jpg');
         }
@@ -65,132 +28,141 @@
     </style>
   </head>
   <body style="margin: 0">
-    <div>
+    <div style="width: 100%; max-width: 600px; margin-left: auto; margin-right: auto">
       <header class="header">
-        <div style="display: flex; flex-direction: column; align-items: center; padding-top: 40px; padding-bottom: 16px">
-          <img style="display: block; max-width: 100%; width: 199px; height: 48px" src="https://dalmunach.sunagency.space/email/icons/logo-CqS0Scdc.svg" alt="Логотип" />
-          <nav style="display: flex; flex-direction: column; gap: 16px">
-            <div style="display: flex; justify-content: center; gap: 14px">
-              <a style="text-decoration: none; display: flex; align-items: center; justify-content: center" href="https://drinksetter.bzh.life" target="_blank" rel="noopener noreferrer">
-                <img style="display: block; max-width: 100%; width: 54px; height: 17px" src="https://dalmunach.sunagency.space/email/icons/drink-setter-DaTYbdTq.svg" alt="" />
-              </a>
-              <a style="text-decoration: none; display: flex; align-items: center; justify-content: center" href="https://scyfion.com" target="_blank" rel="noopener noreferrer">
-                <img style="display: block; max-width: 100%; width: 54px; height: 14px" src="https://dalmunach.sunagency.space/email/icons/scyfion-BTK-Yxhq.svg" alt="" />
-              </a>
-            </div>
-            <a style="text-decoration: none; display: flex; align-items: center; justify-content: center" href="https://dalmunach.silpo.ua" target="_blank" rel="noopener noreferrer">
-              <img style="display: block; max-width: 100%; width: 200px; height: 23px" src="https://dalmunach.sunagency.space/email/icons/dalmunach-CFTQlXl3.svg" alt="" />
-            </a>
-          </nav>
-        </div>
-      </header>
+  <div style="padding-top: 40px; padding-bottom: 16px">
+    <img style="display: block; max-width: 100%; width: 199px; height: 48px; margin-left: auto; margin-right: auto" src="https://dalmunach.sunagency.space/email/images/logo-CqUf_4j3.png" alt="Логотип" />
+    <nav>
+      <table cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table cellspacing="0">
+              <tr>
+                <td>
+                  <a style="text-decoration: none; display: flex; align-items: center; justify-content: center" href="https://drinksetter.bzh.life" target="_blank" rel="noopener noreferrer">
+                    <img style="display: block; max-width: 100%; width: 54px; height: 17px" src="data:image/png;base64,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" alt="" />
+                  </a>
+                </td>
+                <td>
+                  <a style="text-decoration: none; display: flex; align-items: center; justify-content: center; margin-left: 14px" href="https://scyfion.com" target="_blank" rel="noopener noreferrer">
+                    <img style="display: block; max-width: 100%; width: 54px; height: 14px" src="data:image/png;base64,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" alt="" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <a style="text-decoration: none; display: flex; margin-top: 16px" href="https://dalmunach.silpo.ua" target="_blank" rel="noopener noreferrer">
+        <img style="display: block; max-width: 100%; width: 200px; height: 23px; margin-left: auto; margin-right: auto" src="https://dalmunach.sunagency.space/email/images/dalmunach-DUGWVK7Z.png" alt="" />
+      </a>
+    </nav>
+  </div>
+</header>
 
       <section class="message-section">
-        <img style="display: block; width: 100%" class="message-section-banner-img" src="https://dalmunach.sunagency.space/email/images/banner-t_gN0REM.jpg" alt="" />
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            padding: 20px;
-            background-image: url('https://dalmunach.sunagency.space/email/images/message-bg-DeD1YUw2.jpg');
-            background-position: 0 0;
-            background-size: cover;
-          "
-        >
-          <div style="display: flex; flex-direction: column; gap: 20px">
-            <p style="margin: 0; color: #222222; font-family: Playfair Display; font-size: 24px; font-weight: 700; line-height: 1.2; text-align: center; text-transform: uppercase">
-              Дякуємо за замовлення!
-            </p>
-            <p style="margin: 0; color: #222222; font-family: Sofia Sans; font-size: 16px; font-weight: 400; line-height: 140%; letter-spacing: 0%; text-align: center" class="message-section-text">
-              Ми отримали вашу заявку та незабаром зв'яжемося з вами для підтвердження деталей. Гарного дня!
-            </p>
-          </div>
-          <img
-            style="display: block; max-width: 100%; width: 65px; height: 8px"
-            class="message-section-decorative-line-img"
-            src="data:image/svg+xml,%3csvg%20width='68'%20height='7'%20viewBox='0%200%2068%207'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M66.5%203.69189V3.69189C63.8316%201.39299%2059.8827%201.39299%2057.2143%203.69189V3.69189C54.5459%205.9908%2050.5969%205.9908%2047.9286%203.69189V3.69189C45.2602%201.39299%2041.3112%201.39299%2038.6429%203.69189V3.69189C35.9745%205.9908%2032.0255%205.9908%2029.3571%203.69189V3.69189C26.6888%201.39299%2022.7398%201.39299%2020.0714%203.69189V3.69189C17.4031%205.9908%2013.4541%205.9908%2010.7857%203.69189V3.69189C8.11734%201.39299%204.16838%201.39299%201.5%203.69189V3.69189'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e"
-            alt=""
-          />
-        </div>
-      </section>
+  <img style="display: block; width: 100%" class="message-section-banner-img" src="https://dalmunach.sunagency.space/email/images/banner-t_gN0REM.jpg" alt="" />
+  <div style="padding: 20px; background-image: url('https://dalmunach.sunagency.space/email/images/message-bg-DeD1YUw2.jpg'); background-position: 0 0; background-size: cover">
+    <div>
+      <p style="margin: 0; color: #222222; font-family: Playfair Display, sans-serif; font-size: 24px; font-weight: 700; line-height: 1.2; text-align: center; text-transform: uppercase">
+        Дякуємо за замовлення!
+      </p>
+      <p
+        style="margin: 0; margin-top: 20px; color: #222222; font-family: Sofia Sans, sans-serif; font-size: 16px; font-weight: 400; line-height: 140%; letter-spacing: 0%; text-align: center"
+        class="message-section-text"
+      >
+        Ми отримали вашу заявку та незабаром зв'яжемося з вами для підтвердження деталей. Гарного дня!
+      </p>
+    </div>
+    <img
+      style="display: block; max-width: 100%; width: 65px; height: 8px; margin-top: 20px; margin-left: auto; margin-right: auto"
+      class="message-section-decorative-line-img"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAAAMCAYAAABIkK4RAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHVSURBVHgB7ZiNbcIwEIVfN2CEG4ENmg3KCN4ANiAblA3CBrQTuJ2g3SAjwAatT3GEm8aOL7ZRWvGkJ4UIn7/z7wFw110ZtcLytESmJUo0Tg8TgTbGj8aV/ewGvxh/Gr8bv9jn0uL+18ZPlokwzsR+NX7DbVRZprW1j6kfq1sx9XNH1q6G43RBhDixvfHZ+Evg1lihjP4bE7cjlJEy1kImzqGZYpqT7FjyhHzaZmJSyKfKxlwa00ciE3s/DEyIX22xE/WrE6F4ZzYLY2I9Z2ZqkF4zbTMz8SIjtwPtCVbjWnO44rtVGZ8QTpwgF8G/C5jpgK4eWo204/fHAJPGfCYdYGps3zRox4yVZWrhP0UIcnHs0GJlXhVgOgSY9LBB6yS7Q7wI/glpEX98hu7xfqHG7jJCl7yPaY+4CZmqLWrIdn4diNUImHYZ4vRSGF8kP0ToToK5x5yCH7i10JxUhWtlv7HvNATHnECEcH1wGjDRgCmUzxrzRBNMeoSJnxW6MfQxne335jK5t8ABBURIL9ZcH5F+JxPkFXzIGulFN+d0zMjUZmBi8caoUFg10pPdIK92SFu40us2RioDU40/+EcgIVyIhY7UUskS5BNyiwlQkP0ULc70DU28HS/C1sdVAAAAAElFTkSuQmCC"
+      alt=""
+    />
+  </div>
+</section>
 
       <footer>
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 24px">
-          <ul style="margin: 0; padding: 0; list-style: none; display: flex; gap: 19px">
-            <li class="footer-nav-links-list-item">
-              <a
-                style="
-                  text-decoration: none;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 48px;
-                  aspect-ratio: 1 / 1;
-                  background-color: #222222;
-                  border-radius: 50%;
-                  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-                "
-                href="https://www.facebook.com/drinksetterua/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg style="width: 26px; height: 26px">
-                  <use href="https://dalmunach.sunagency.space/email/icons/icons-BO-40OTk.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-nav-links-list-item">
-              <a
-                style="
-                  text-decoration: none;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 48px;
-                  aspect-ratio: 1 / 1;
-                  background-color: #222222;
-                  border-radius: 50%;
-                  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-                "
-                href="https://www.instagram.com/drinksetterua/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg style="width: 19px; height: 19px">
-                  <use href="https://dalmunach.sunagency.space/email/icons/icons-BO-40OTk.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-nav-links-list-item">
-              <a
-                style="
-                  text-decoration: none;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 48px;
-                  aspect-ratio: 1 / 1;
-                  background-color: #222222;
-                  border-radius: 50%;
-                  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-                "
-                href="https://drinksetter.bzh.life"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg style="width: 18px; height: 21px">
-                  <use href="https://dalmunach.sunagency.space/email/icons/icons-BO-40OTk.svg#drink-setter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <p style="margin: 0; color: #222222; font-family: Inter; font-size: 12px; font-weight: 400; line-height: 1.25; text-align: center" class="footer-copyright">
-            © 2024 Dalmunach. All rights reserved.
-          </p>
-        </div>
-      </footer>
+  <div>
+    <table cellspacing="0" width="100%">
+      <tr>
+        <td align="center">
+          <table cellspacing="0">
+            <tr>
+              <td>
+                <a
+                  style="
+                    text-decoration: none;
+                    display: flex;
+                    box-sizing: border-box;
+                    width: 48px;
+                    height: 48px;
+                    padding: 11px;
+                    background-color: #222222;
+                    border-radius: 50%;
+                    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+                  "
+                  href="https://www.facebook.com/drinksetterua/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img style="width: 26px; height: 26px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA1CAYAAAAOJMhOAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHGSURBVHgB7ZqBTcMwEEV/EAN0A8wG3YBsQDdoN2AE2KAwQRmhTNB0gzJBwwR0g3CWzpIFcdLYcXNU96TTSXUuyvcl57NVQFEURflHFLgwTdOU5OZkd2SzwGX7oijeIRUSMSN7JvtuzgSR3CIznJENmeGfKrJPskMgZI1w5qaFxCy9Sd+xuL6YY0qGskHPNPfEvAyIEyvoOFSMHwdJ0POs3GuGgUgV5LIzHxiaLGj0KsciDNmB1pJD4JqS3BPaq5lBAjnKdsl+3zZIYgy5vlexRiQ5BLlZrwPja/ZvZK+Ba06IJOfCGnooJ3hLr2SNkbnBlaGCpHN1gqKLAq83tvzGdsa7jvWzpoJxjwhSMmQFhcTYChfaHnygn8tvH7x+bYORoHst+J5bRCLtG3pkXyESaYJcM1shEjGCuMezgk6hpvYcJGXIZWePBMbo5WYtZwWnjq2DrWAGfyvZkn2FKfCqXIhFIG7TEzd4U+iTkqEK7bNp0J4Bf9xiM/i7I/9K+X6yYA9FeKZXgfEdj5fIgDan0lFB0lFB0lFB0lFB0lFB0sl5tr2kBvSh5XeDjOQQ5LYEJSZg9D9e8I60RPfZmj1IrKAoijh+AF4kWhhHBXRSAAAAAElFTkSuQmCC" alt="" />
+                </a>
+              </td>
+              <td>
+                <a
+                  style="
+                    text-decoration: none;
+                    display: flex;
+                    box-sizing: border-box;
+                    width: 48px;
+                    height: 48px;
+                    padding: 14px;
+                    margin-left: 19px;
+                    background-color: #222222;
+                    border-radius: 50%;
+                    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+                  "
+                  href="https://www.instagram.com/drinksetterua/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img style="width: 20px; height: 20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAApCAYAAABDV7v1AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALfSURBVHgBxVmNdeIwDFZ4N0A2ON8G3ARHJ7hu0DBBywS0E5QN4CaAThBuAtoJSCeADVTpRSaKSUjs/PR7Ty9BkeMvsi3JJoIGIGJMl0eSqcgQyEjeSHZRFGVeLYmgIUlxfKy5b5dPVEPyni5rklipz/Ll79AfYpEplPvKSBbk3V1tSyL54HxhSjKDgcF9kBycvh/qjI1j+AQjg/p8Vv2fSKZVRsexSYpz2Jux0j3pEXUbJHpCwwiQhaOxVM82Sj/TjbbqgYGB4XgNXVLs4UqvynwoK4clahfO0ZmXz8omFd1pIgoDRXj4D+PgLFfu92eNjeUST+TGqIcZjIM3S4IkUfoNVHD5AT1C5heL9dAnyXtV4CbdSla6XUDs4cXNFCrhwSIBf4IJlkObi6Ne0U7bGGsWL6pI1JkoXoeYWzigR0TRRCfQAZjH20R+8tC9kPyKBHxPModirnGW2aIK7r4densUywnieMtTmGcfncdfffvoQvTYhqSyj7E8j9u06Tb08jFGfr60KXbJhqfGXKkS8EDoHP2j7vfQEkSWbc8V72hEKFEj18x761B8mAEPdFr1HWF8jEOJ6jztC9vGa0sTSvTDdooe2xRZ6db+EzwQSlTn7iW0x7LmHe0QGEdT1aaRLNk86gQBLdBXwOdsc1Lt1lVBXAL9K5ZhfIkGl3kclqj9Hd3yjsDWlPziPRQFL5d791BedPOAkJYDu1VPBm+XeJfhRs/zAeyremKwd0hslbSHInSB3LNuQfJbMlMQeqvwicQGZBuBeRkXBw9xBSzRM/QIKUD6eOdlbtuhz9TDoY4WQ2CuNGpBtIpxY0Bz0ovpn1wNjnB61wQs17x7/cA4oSRsX9MDsGk3QIqVeriFb4CQ1Odgqzqjg+NZAyMBrzeBl5GNqowhT4tGqTeQH8Fk0HMoE8xI/kKebi0ykrumkxP+sg1+H/z2/pjXACmOhxRrIk7UkrCB4f9n2klGq8QXDA5j3btf6PAAAAAASUVORK5CYII=" alt="" />
+                </a>
+              </td>
+              <td>
+                <a
+                  style="
+                    text-decoration: none;
+                    display: flex;
+                    box-sizing: border-box;
+                    width: 48px;
+                    height: 48px;
+                    padding: 13px 15px;
+                    margin-left: 19px;
+                    background-color: #222222;
+                    border-radius: 50%;
+                    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+                  "
+                  href="https://drinksetter.bzh.life"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img style="width: 18px; height: 22px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAtCAYAAAAtOHJTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKnSURBVHgBzVnteeIwDBb39P+xAb4JygZ1J7jbAJjgugEwAWxQOgHdoLkJyk1AmKDdQJUaGRQ3ATsf1O/zCCX460WWLcsAJIwBfyDiIykLzfGuJCf5R7IbDAY5tIAjh9APdiTPJE9NiPrk7qE5DMlQ9B3J2CvfkCyjSaIAOgR1Z0imJC9YxopkGNNR5+S8/sckW0Vwz+RDG/dKTo0zFWIOk3P1Sz5H/jCAQLA1SM2h8DMfGXW1rGlnSOndYVFX1zWIthxV3+AZBLRfB1mwIbkHaZbJdE3VgK+BfWiC47pKTchNfSKK8EtEP1u1SEou8gOaIxNt1Hfu+T+EYwZFVDFQ+PARbcgNPa2f3yEQtBi47kxe2fIWOiS3U9/lokcQASKYkXqS16P12pAzorWVctFjiMdCtHXWiybHTit71a1HiOGsyHUsRoQpibnP8vpHDxi6N3FcfPO2tIUqN/gVj6Ek5QehjDEMJkfF84qB3/z9CYtAv8dymNpCIPD0420MOTfYA4QPZBXBUOu5yLOO8TkjOtgKsgodfgY2c35r2qzWvpCLvk2RXNKWOyI5cjrHSI4cquN7itN63HJSJreLIZfDdWBFH5pY7hf0izvRWYrTakXvkiJHK3UqjzmHvtQs51LEjD+SISdHJCuvn0l2SpZbid64KHGjS/WptgJu/5njhTuOWFB/f+GUdyz9wmtgVEOMj/bu9LvQZc5ynDcaOI+J1NmQHCAOvPoOVcRI8e0Azwpf0y6gCfB0CWihA2CRxb1Kn3usuK/7lgWhLMZ+xnnvfdV17NXJieUvEovttNW0yjSu1AKpnMqrkhNScywn45z+XUwVb6AHyMCW5DcUVwuOSE4y81JG6JLcpMZ6IyHBvmS8Ms6o+I+SNfQB/Pp/wiXssbhWtdAQH5c0TsFGIBQnAAAAAElFTkSuQmCC" alt="" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <p style="margin: 0; margin-top: 24px; color: #222222; font-family: Inter, sans-serif; font-size: 12px; font-weight: 400; line-height: 1.25; text-align: center" class="footer-copyright">
+      © 2024 Dalmunach. All rights reserved.
+    </p>
+  </div>
+</footer>
+
     </div>
   </body>
 </html>

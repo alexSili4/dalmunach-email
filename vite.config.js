@@ -35,5 +35,5 @@ export default defineConfig({
     outDir: '../email',
   },
   plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
-  base: 'https://dalmunach.sunagency.space/',
+  base: 'https://dalmunach.sunagency.space/email/',
 });
